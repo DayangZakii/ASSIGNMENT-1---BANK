@@ -1,0 +1,91 @@
+package assignment;
+import java.util.*;
+public class assignmnet1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc = new Scanner (System.in);
+
+int age;
+int year;
+int accnumber;
+double rate;
+double accbalance;
+double msalary;
+double asalary;
+double withdram;
+double exceed;
+double repayment;
+double monthlyp;
+double penalty;
+String name;
+
+System.out.println("*************************************************************");
+System.out.println("                             UUM BANK");
+System.out.println("*************************************************************");
+
+System.out.println("");
+
+System.out.print("Please enter you age : ");
+age = sc.nextInt();
+System.out.print("Name           : "); 
+name = sc.next(); 
+System.out.print("Account Number : "); 
+accnumber = sc.nextInt(); 
+System.out.print("Monthly Salary : RM ");
+msalary = sc.nextDouble();
+System.out.print("Bank Balance   :RM "); 
+accbalance = sc.nextDouble(); 
+System.out.println("*************************************************************");
+System.out.print("Withdraw Amount :RM "); 
+withdram = sc.nextDouble(); 
+exceed = withdram - accbalance;
+System.out.printf("\nThe exceeding amount is RM %.2f", exceed);
+System.out.println("");
+System.out.println("*************************************************************");
+asalary= msalary*12;
+System.out.printf("Your annual salary is RM %.2f", asalary);
+System.out.print("\n___________________________________________________________");
+System.out.println("\n         ANNUAL SALARY           INTEREST RATE(%)     ");
+System.out.println("        RM20,000 and above                3.0           ");
+System.out.println("       RM10,001 - RM19,999                2.5           ");
+System.out.println("         below RM 10,000                  2.0          ");
+System.out.println("____________________________________________________________");
+System.out.println("Please enter the interest rate based on your annual salary");
+rate = sc.nextDouble();
+System.out.println("*************************************************************");
+repayment = (exceed*(rate/100)) + exceed;
+System.out.printf("Your total amount of repayment is RM %.2f", repayment);
+System.out.print("\n___________________________________________________________");
+System.out.println("\n       REPAYMENT AMOUNT              DURATION     ");
+System.out.println("        RM10,000 and above             3 YEARS          ");
+System.out.println("        RM1,001 - RM9,999             2 YEARS           ");
+System.out.println("          below RM 1,000               1 YEAR          ");
+System.out.println("_____________________________________________________________");
+System.out.println("Please enter the duration of years based on repayment amount");
+year = sc.nextInt();
+System.out.println("*************************************************************");
+monthlyp = repayment/(year*12);
+penalty = monthlyp*(0.5/100);
+System.out.println("                           UUM BANK");
+System.out.println("*************************************************************");
+System.out.println("Name            : " + name);
+System.out.println("Account Number  : " + accnumber);
+System.out.printf("Withdraw Amount : RM " + withdram ); 
+System.out.println("\nBank Balance    : RM 0.00"); 
+System.out.println("");
+System.out.println("*************************************************************");
+System.out.printf("\nTotal repyment     : RM %.2f" , repayment);
+System.out.printf("\nMonthly repayment  : RM %.2f" , monthlyp);
+System.out.println("");
+System.out.printf("\nA monthly penalty of 0.5%% will be charge for any late payment");
+System.out.println("\nThe repayment should be paid in " + year + " year time");
+System.out.println("");
+System.out.printf("\nPenalty amount   (0.5%%)    : RM %.2f" ,penalty);
+System.out.println("");
+System.out.println("                         THANK YOU!");
+System.out.println("*************************************************************");
+	}
+
+}
+
