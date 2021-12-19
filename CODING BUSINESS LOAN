@@ -1,0 +1,82 @@
+package bank;
+import java.util.Scanner;
+public class Assignment1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int years;
+		double rate,loan,month,salary,pin,accnumber,phoneno;
+		String name;
+		
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("====================================UUM Bank Statement====================================");
+		
+		System.out.print("\nName           : ");
+		name = sc.nextLine();
+		
+		System.out.print("Phone Number   : ");
+		phoneno = sc.nextDouble();
+		
+		System.out.print("Account Number : ");
+		accnumber = sc.nextDouble();
+		
+		System.out.print("Pin No.        : ");
+		pin = sc.nextDouble();
+		
+		System.out.print("Salary         : RM ");
+		salary = sc.nextDouble();
+		
+		double sumsalary = (salary*12);
+		System.out.print("\nYour annual salary is  : RM " + sumsalary);
+		System.out.println("");
+		System.out.print("\n________________________________________________________________________________________");
+		System.out.println("\n             TOTAL ANNUAL SALARY                  SUGGESTED YEARS OF LOAN REPAYMENT");
+		System.out.println("            MORE THAN RM50,000                                  3 YEARS            ");
+		System.out.println("  LESS THAN RM50,000 & MORE THAN RM20,000                       4 YEARS            ");
+		System.out.println("              BELOW RM20,000                                    5 YEARS            ");
+		System.out.println("________________________________________________________________________________________");
+		
+		System.out.print("\nPlease enter the amount of years : ");
+		years = sc.nextInt();
+		
+		System.out.print("\nPlease enter the amount of loan : RM ");
+		loan = sc.nextDouble();
+		
+		System.out.print("\n_______________________________________________________________________");
+		System.out.println("\n          AMOUNT OF LOAN                   INTEREST RATE(%)     ");
+		System.out.println("        RM5,000 - RM20,000                        8            ");
+		System.out.println("       RM20,001 - RM50,000                        7            ");
+		System.out.println("       RM50,001 - RM100,000                      6.5           ");
+		System.out.println("_______________________________________________________________________");
+		
+		System.out.print("\nPlease enter the amount of interest rate (%) : ");
+		rate = sc.nextDouble();
+		
+		double irate = ((rate/100)*loan*years);
+		double monthlyirate = (irate/(years*12));
+		double monthlyp = ((loan/(years*12) + monthlyirate));
+		double annualp = monthlyp*12;
+		
+		
+		System.out.println("=========================================================================================");
+		
+		System.out.println("REPAYMENT : ");
+		System.out.printf("\nThe sum of interest is       : RM %.2f" , irate);
+		System.out.printf("\nThe monthly repayment is     : RM %.2f" , monthlyp);
+		System.out.printf("\nThe annual repayment is      : RM %.2f" , annualp);
+		System.out.println("");
+		
+		System.out.println("=========================================================================================");
+		
+		System.out.println("\nIf you are UNABLE to pay it on time,a PENALTY will be charged by the bank.");
+		double penalty = ((1.0/100)*monthlyp*12);
+		
+		System.out.println("\nPenalty Charged (1.0% per annum) : RM " + penalty);
+		System.out.println("");
+		System.out.println("=========================================================================================");
+		System.out.println("\n                            THANK YOUR FOR CHOOSING US!");
+		System.out.println("\n=========================================================================================");		
+	}
+
+}
