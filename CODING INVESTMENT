@@ -1,0 +1,86 @@
+package assg;
+import java.util.Scanner;
+public class drafassg2 {
+public static void main(String[] args) {
+	
+	Scanner sc= new Scanner(System.in);
+	
+	double future,investment,simpleInterest,compound;
+	int total;
+	double trustFund=1.8;
+	double gold=0.5;
+	double bonds=2.5;
+	double sukuk=1.2;
+	
+	System.out.println("**********WELCOME TO UUM BANK**********\n");
+	
+	System.out.println("Enter your username and password");
+	System.out.print("username: " );
+	String username=sc.next();
+	System.out.print("password: " );
+	int password=sc.nextInt();
+	
+	System.out.println("_____________________________________________________");
+	
+	System.out.println("\nChoose service: \n1.Business loan\n2.Personal loan\n3.Credit card\n4.Housing loan\n5.Investment");
+	int choose=sc.nextInt();
+	System.out.println("_____________________________________________________");
+	
+	System.out.println("\nEnter name: ");
+	String name=sc.next();
+	
+	System.out.println("Enter age:");
+	int age=sc.nextInt();
+	
+	System.out.println("What's your primary reason for investing?");
+	System.out.println(" 1.saving for retirement\n 2.general saving\n 3.emergency fund\n 4.major purchase");
+	int reason=sc.nextInt();
+	
+	System.out.println("are you currently investing? (Y/N):");
+	String currentInvest=sc.next();
+	
+	System.out.println("Enter your investment amount: ");
+	double amount=sc.nextDouble();
+	
+	System.out.println("Enter your financial goal:");
+	int goal=sc.nextInt();
+	
+	System.out.println("Enter investment period(years): ");
+	int year=sc.nextInt();
+	
+	System.out.println("Choose your investment:");
+	System.out.println("    INVESTMENT           RATE");
+	System.out.println("\n1.unit trust fund         " + trustFund+"%");
+	System.out.println("\n2.    gold                " + gold+"%");
+	System.out.println("\n3.    bonds               " + bonds+"%");
+	System.out.println("\n4.    sukuk               " + sukuk+"%");
+	int typeInvest=sc.nextInt();
+	System.out.println(typeInvest);
+
+	System.out.println("Enter interest rate : ");
+	double rate=sc.nextDouble();
+	
+	rate = rate/12;
+	simpleInterest=(rate/100)*amount*year;
+	future = amount*Math.pow((1 + rate / 100),(year * 12));	  
+	total=year+age;
+	investment=year*amount;
+	compound=future-amount-simpleInterest;
+          System.out.println("********** YOUR INVESTMENT PORTFOLIO **********");	
+		  System.out.println("\nName               : "+name);
+		  System.out.println("Starting age       : "+age);
+		  System.out.println("Age end investment : "+total);
+		  System.out.printf("\nyearly investment     : RM %.2f ",amount);
+		  System.out.printf("\nTotal amount invested : RM %.2f ",investment);
+		  System.out.printf("\nSimple interest       : RM %.2f ",simpleInterest);
+		  System.out.printf("\nCompound interest     : RM %.2f ",compound);
+		  System.out.printf("\nAccumulated value is  : RM %.2f " , future);
+		  System.out.println("\n_____________________________________________________");
+		  System.out.println("\n\nif your entire investment lost 10%, what would you do?");
+		  System.out.println("1.sell all investment\n2.keep all investment\n3.invest to other market");
+		  int lostChoice=sc.nextInt();
+		  System.out.println(lostChoice);
+		  
+	     System.out.println("\nWE KEEP YOUR CHOICE FOR FUTURE NEEDS. THANK YOU!!");
+	     System.out.println("******************************************************");
+}}
