@@ -1,0 +1,54 @@
+*************************************************************
+                             UUM BANK
+*************************************************************
+
+Please enter you age : 19
+Name           : HARSHINI
+Account Number : 12345678
+Monthly Salary : RM 10000.00
+
+Bank Balance   :RM 1000.00
+*************************************************************
+Withdraw Amount :RM 10000.00
+
+The exceeding amount is RM 9000.00
+*************************************************************
+Your annual salary is RM 120000.00
+___________________________________________________________
+         ANNUAL SALARY           INTEREST RATE(%)     
+        RM20,000 and above                3.0           
+       RM10,001 - RM19,999                2.5           
+         below RM 10,000                  2.0          
+____________________________________________________________
+Please enter the interest rate based on your annual salary
+2.0
+*************************************************************
+Your total amount of repayment is RM 9180.00
+___________________________________________________________
+       REPAYMENT AMOUNT              DURATION     
+        RM10,000 and above             3 YEARS          
+        RM1,001 - RM9,999             2 YEARS           
+          below RM 1,000               1 YEAR          
+_____________________________________________________________
+Please enter the duration of years based on repayment amount
+2
+*************************************************************
+                           UUM BANK
+*************************************************************
+Name            : HARSHINI
+Account Number  : 12345678
+Withdraw Amount : RM 10000.0
+Bank Balance    : RM 0.00
+
+*************************************************************
+
+Total repayment     : RM 9180.00
+Monthly repayment  : RM 382.50
+
+A monthly penalty of 0.5% will be charge for any late payment
+The repayment should be paid in 2 year time
+
+
+Penalty amount   (0.5%)    : RM 1.91
+                         THANK YOU!
+*************************************************************
