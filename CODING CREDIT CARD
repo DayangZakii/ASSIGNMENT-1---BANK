@@ -1,0 +1,71 @@
+package assignment;
+
+import java.util.Scanner;
+
+public class CreditCard {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int age, accnum, month, dateUse, datePay, numPhone;
+		String name;
+		double income, AmountUse, AmountPay, sumDaily, avgDaily, interest, balance;
+		int apr=14;
+		double dailyPeriod=0.038;
+		int daysBilling=30;
+		
+		System.out.println("_________________________________UUM BANK_________________________________");
+		
+		Scanner a = new Scanner(System.in);
+		
+		System.out.println("\nPlease enter your age: ");
+		age=a.nextInt();
+		System.out.println("Congratulations you’re eligible for the bank services!");
+			
+		System.out.println("\nPlease enter your personal information:");
+	
+		System.out.println("Name: ");
+		name=a.next();
+		
+		System.out.println("Account number: ");
+		accnum=a.nextInt();
+		
+		System.out.println("Income (RM): ");
+		income=a.nextDouble();
+		
+		System.out.println("Phone number registered: ");
+		numPhone=a.nextInt();
+		System.out.println("_________________________________UUM BANK_________________________________");
+		
+		System.out.println("Please read the information below: ");
+		System.out.println("The annual percentage rate (APR) for purchases = "+ apr +"%");
+		System.out.println("The daily period rate is = "+dailyPeriod+"%");
+		System.out.println("\nPlease enter information needed:");
+		System.out.println("Enter month(1-12): ");
+		month=a.nextInt();
+		System.out.println("Enter amount of credit card being use: RM");
+		AmountUse=a.nextDouble();
+		System.out.println("Enter the date for amount of credit card being use(1-30): ");
+		dateUse=a.nextInt();
+		System.out.println("Enter amount of the payment that have done: RM");
+		AmountPay=a.nextDouble();
+		System.out.println("Enter the date for amount of the payment that have done(1-30): ");
+		datePay=a.nextInt();
+		System.out.println("_________________________________UUM BANK_________________________________");
+		
+		balance=AmountUse-AmountPay;
+		sumDaily=(AmountUse*(datePay-dateUse))+ (AmountPay*(30-datePay));
+		avgDaily=sumDaily/30;
+		interest=avgDaily*(dailyPeriod/100)*daysBilling;
+		
+		System.out.println("Balance that been carried is : RM"+balance);
+		System.out.println("Sum of daily balances (RM): "+sumDaily);
+		System.out.println("Days in billing period:"+daysBilling);
+		System.out.println("Average daily balance: "+avgDaily);
+		System.out.println("Interest charge: " + avgDaily + "("+dailyPeriod+"/100)"+daysBilling);
+		System.out.println("Your interest charge is RM"+interest);
+		System.out.println("\n\t\t\tThe less your average daily balance, the less your interest charge!!!");
+		System.out.println("\t\t\t\t\tThank you for using our services!");
+	}
+}
+
