@@ -1,0 +1,74 @@
+**********WELCOME TO UUM BANK**********
+
+Enter your username and password
+username: mellia
+password: 12345
+_____________________________________________________
+
+Choose service: 
+1.Business loan
+2.Personal loan
+3.Credit card
+4.Housing loan
+5.Investment
+5
+_____________________________________________________
+
+Enter name: 
+Amilia
+Enter age:
+30
+What's your primary reason for investing?
+ 1.saving for retirement
+ 2.general saving
+ 3.emergency fund
+ 4.major purchase
+2
+are you currently investing? (Y/N):
+N
+Enter your investment amount: 
+10000
+Enter your financial goal:
+100000
+Enter investment period(years): 
+20
+Choose your investment:
+    INVESTMENT           RATE
+
+1.unit trust fund         1.8%
+
+2.    gold                0.5%
+
+3.    bonds               2.5%
+
+4.    sukuk               1.2%
+3
+3
+Enter interest rate : 
+2.5
+********** YOUR INVESTMENT PORTFOLIO **********
+
+Name               : Amilia
+Starting age       : 30
+Age end investment : 50
+
+yearly investment     : RM 10000.00 
+Total amount invested : RM 200000.00 
+Simple interest       : RM 416.67 
+Compound interest     : RM 6061.97 
+Accumulated value is  : RM 16478.64 
+_____________________________________________________
+
+
+if your entire investment lost 10%, what would you do?
+1.sell all investment
+2.keep all investment
+3.invest to other market
+3
+3
+
+WE KEEP YOUR CHOICE FOR FUTURE NEEDS. THANK YOU!!
+******************************************************
+*Invest to other market: user will choose other type of investment.
+As example, current investment is bonds then if user lost and want to invest other market, user will choose either unit trust fund, gold or sukuk.
+
