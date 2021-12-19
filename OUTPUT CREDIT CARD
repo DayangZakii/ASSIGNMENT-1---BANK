@@ -1,0 +1,42 @@
+_________________________________UUM BANK_________________________________
+
+Please enter your age: 
+20
+Congratulations you’re eligible for the bank services!
+
+Please enter your personal information:
+Name: 
+SUCHIRA
+Account number: 
+100399201
+Income (RM): 
+1800.00
+Phone number registered: 
+0139879900
+_________________________________UUM BANK_________________________________
+Please read the information below: 
+The annual percentage rate (APR) for purchases = 14%
+The daily period rate is = 0.038%
+
+Please enter information needed:
+Enter month(1-12): 
+1
+Enter amount of credit card being use: RM
+2500
+Enter the date for amount of credit card being use(1-30): 
+1
+Enter amount of the payment that have done: RM
+1500
+Enter the date for amount of the payment that have done(1-30): 
+16
+_________________________________UUM BANK_________________________________
+Balance that been carried is : RM1000.0
+Sum of daily balances (RM): 58500.0
+Days in billing period:30
+Average daily balance: 1950.0
+Interest charge: 1950.0(0.038/100)30
+Your interest charge is RM22.229999999999997
+
+			The less your average daily balance, the less your interest charge!!!
+					Thank you for using our services!
+
