@@ -1,0 +1,46 @@
+====================================UUM Bank Statement====================================
+
+Name           : STEVE ROGERS
+Phone Number   : 0199399167
+Account Number : 03030020001030
+Pin No.        : 876543
+Salary         : RM 3500
+
+Your annual salary is  : RM 42000.0
+
+________________________________________________________________________________________
+             TOTAL ANNUAL SALARY                  SUGGESTED YEARS OF LOAN REPAYMENT
+            MORE THAN RM50,000                                  3 YEARS            
+  LESS THAN RM50,000 & MORE THAN RM20,000                       4 YEARS            
+              BELOW RM20,000                                    5 YEARS            
+________________________________________________________________________________________
+
+Please enter the amount of years : 4
+
+Please enter the amount of loan : RM 100000
+
+_______________________________________________________________________
+          AMOUNT OF LOAN                   INTEREST RATE(%)     
+        RM5,000 - RM20,000                        8            
+       RM20,001 - RM50,000                        7            
+       RM50,001 - RM100,000                      6.5           
+_______________________________________________________________________
+
+Please enter the amount of interest rate (%) : 6.5
+=========================================================================================
+REPAYMENT : 
+
+The sum of interest is       : RM 26000.00
+The monthly repayment is     : RM 2625.00
+The annual repayment is      : RM 31500.00
+=========================================================================================
+
+If you are UNABLE to pay it on time,a PENALTY will be charged by the bank.
+
+Penalty Charged (1.0% per annum) : RM 315.0
+
+=========================================================================================
+
+                          THANK YOUR FOR CHOOSING US!
+
+=========================================================================================
